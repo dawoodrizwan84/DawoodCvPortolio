@@ -32,6 +32,19 @@
 //--//-->   ABOUT
 ======================================*/
 
+.orange-underline {
+    position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+.orange-underline::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely relative to its parent */
+    left: 0; /* Align at the start of the element */
+    bottom: -3px; /* Adjust to your preferred distance from text */
+    width: 100%; /* Full width of the text */
+    height: 1px; /* Thickness of the underline */
+    background-color: orange; /* Color of the underline */
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -354,29 +367,73 @@
 		</div>
 		<br>
 		
+
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card resume-wrap ftco-animate">
 					<div class="card-body">
-						<span class="date">2023-Present</span>
+						<span class="date">May 2024-Present</span>
 						<h2>Web Developer</h2>
 						<span class="position">Freelance</span>
 						<p class="mt-4" style="text-align: justify;">
-							Currently I am working as a Freelance.
-							<ul>
-								<li>Proficient in C#, HTML, CSS, and JavaScript, leveraging Bootstrap for dynamic front-end development.</li>
-								<li>Skilled in crafting scalable architectures with MVC and ASP.NET Core, utilizing Visual Studio, Visual Studio Code, and Git for project management.</li>
-								<li>Expertise in SQL and Azure database management for robust data solutions.</li>
-								<li>Experienced in collaborative coding with GitHub, ensuring version control and team collaboration.</li>
-								<li>Skillful in Test-Driven Development methodologies, utilizing xUnit and NUnit for code reliability.</li>
-								<li>Adept at integrating APIs and leveraging Azure services like Queue-Trigger and Azure Table for backend solutions.</li>
-								<li>Well-versed in Agile methodologies and the Software Development Life Cycle (SDLC) for adaptive project management.</li>
-								<li>Committed to staying updated on emerging trends in web development, seeking continuous skill enhancement and innovation.</li>
+							<!-- Currently I am working as a Freelance. -->
+							<ul style="text-align: justify">
+								<li><strong class="orange-underline">Proficient Developer:</strong> Well-versed in C#, HTML, CSS, and JavaScript, with a knack for dynamic front-end development using Bootstrap.</li>
+								<li><strong class="orange-underline">Scalable Architect:</strong> Skilled in building robust architectures with MVC and ASP.NET Core, utilizing Visual Studio, Visual Studio Code, and Git for seamless project management.</li>
+								<li><strong class="orange-underline">Database Expert:</strong> Specialized in SQL and Azure database management, delivering strong and reliable data solutions.</li>
+								<li><strong class="orange-underline">Collaborative Coder:</strong> Experienced in team-based coding with GitHub, ensuring efficient version control and collaboration.</li>
+								<li><strong class="orange-underline">TDD Practitioner:</strong> Proficient in Test-Driven Development, employing xUnit and NUnit to ensure code reliability and performance.</li>
+								<li><strong class="orange-underline">API Integrator:</strong> Adept at integrating APIs and leveraging Azure services, such as Queue-Trigger and Azure Table, for comprehensive backend solutions.</li>
+								<li><strong class="orange-underline">Agile Enthusiast:</strong> Well-versed in Agile methodologies and the Software Development Life Cycle (SDLC), ensuring adaptive and efficient project management.</li>
+								<li><strong class="orange-underline">Innovative Learner:</strong> Dedicated to staying abreast of emerging web development trends, continuously enhancing skills and fostering innovation.</li>
 							</ul>
 						</p>
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-6">
+				<div class="card resume-wrap ftco-animate">
+					<div class="card-body">
+						<span class="date">Feb 2024-May 2024</span><br/>
+						<!-- <h2>Web Developer</h2> -->
+						<span class="position">Full Stack Web Developer Internship</span>
+						<p class="mt-4" style="text-align: justify;">
+							I successfully completed my Full Stack Web Development Internship at Sybring, Norrköping.
+							<ul style="text-align: justify;">
+								<li><strong class="orange-underline">Project:</strong> Developed a Time Reporting System for consultants.
+									<ul>
+										<li><strong>Technologies:</strong> .NET Core, Bootstrap, JavaScript</li>
+										<li><strong>Process:</strong> Implemented Agile practices, including iterative development cycles and continuous integration.</li>
+										<!-- <li><strong>Achievement:</strong> Delivered a responsive system that enhanced operational efficiency.</li> -->
+									</ul>
+								</li>
+								<li><strong class="orange-underline">Skills Developed:</strong>
+									<ul>
+										<!-- <li>Gained proficiency in C#, HTML, CSS, JavaScript, Bootstrap, ASP.NET Core, and SQL.</li> -->
+										<li>Learned Agile development practices and version control using Git and GitHub.</li>
+										<li>Enhanced problem-solving abilities and adapted quickly to evolving project requirements.</li>
+									</ul>
+								</li>
+								<li><strong class="orange-underline">Achievements:</strong>
+									<ul>
+										<li>Completed and deployed a functional web application, receiving positive stakeholder feedback.</li>
+										<li>Contributed to team discussions and improved application performance and usability.</li>
+									</ul>
+								</li>
+								<li><strong class="orange-underline">Learning Experience:</strong>
+									<ul>
+										<li>Engaged in continuous learning and skill enhancement through research and hands-on practice.</li>
+										<li>Expanded understanding of the Software Development Life Cycle (SDLC) in real-world applications.</li>
+									</ul>
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		
 		
 			<div class="col-md-6">
 				<div class="card resume-wrap ftco-animate">
@@ -386,7 +443,7 @@
 						<span class="position">Instabox, Sweden</span>
 						<p class="mt-4" style="text-align: justify;">
 							Instabox is a well-renowned supply chain and distribution company in Sweden.
-							<ul>
+							<ul style="text-align: justify">
 								<li>Spearheaded a transformative period as Group Leader at Instabox, orchestrating team productivity.</li>
 								<li>Galvanized team members towards a unified vision of efficiency and excellence, fostering a culture of innovation and collaboration.</li>
 								<li>Implemented strategic initiatives that resulted in notable increases in productivity and streamlined operations.</li>
@@ -406,7 +463,7 @@
 						<span class="position">Ufone, Pakistan</span>
 						<p class="mt-4" style="text-align: justify;">
 							Ufone is a leading telecommunications company in Pakistan.
-							<ul>
+							<ul style="text-align: justify">
 							<li>Achieving and maintaining a high customer satisfaction rating of over 90%
 								through prompt and effective issue resolution.</li>
 							<li>Exceeding service level agreement (SLA) targets by consistently responding
@@ -418,7 +475,7 @@
 							<li>Cultivated strong relationships with customers, ensuring their needs were
 								met and exceeded, resulting in enhanced loyalty and retention rates.</li>
 							<li>Played a pivotal role in promoting telecommunications offerings,
-								contributing to increased sales and revenue generation for the company.</li>
+								contributing to increased sales and revenue generation for the company.</li><br/><br/>
 
 							</ul>
 						</p>
